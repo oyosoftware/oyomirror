@@ -22,10 +22,12 @@
 <p>jQuery component to mirror an image.</p>
 <h3>Features</h3>
 <ul>
-  <li>A tool to mirror an image in one of four directions.</li>
-  <li>.</li>
-  <li>.</li>
-  
+  <li>A tool to mirror an image in one of four directions: top, left, right or bottom.</li>
+  <li>Part size can be given in percentage or pixels.</li>
+  <li>Degrees of rotation is given from the z-plane to the direction of side.</li>
+  <li>Perspective can be given, but most ideal for given degrees is calculated.</li>
+  <li>Opacity from the inside to the outside can be changed.</li>
+  <li>Fade color can be changed for background purposes.</li>
 </ul>
 <h2>Contact</h2>
 <ul>
