@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Test Mirror</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+        <script src="oyomirror.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 30px;
+                background-color: white;
+            }
+            .image {
+                width: 250px;
+            }
+            .wrapper {
+                white-space: nowrap;
+            }
+            .top {
+                position: relative;
+                top: 0.5px;
+                left: 62.5px;
+            }
+            .left {
+                display: inline-block;
+                position: relative;
+                top: 0px;
+                left: 0.5px;
+                margin-right: -4px;
+            }
+            .original {
+                display: inline-block;
+                position: relative;
+                left: 0px;
+            }
+            .right {
+                display: inline-block;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                margin-left: -4px;
+            }
+            .bottom {
+                position: relative;
+                top: 0px;
+                left: 55.625px;
+                left: 62.5px;
+                margin-top: -4px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function () {
+                var image = $(".image")[0];
+
+                var mirror1 = new oyoMirror(image, "top", "25%", 45);
+                $(".top").append(mirror1);
+                mirror1.changeFadeColor("lightblue");
+                var mirror2 = new oyoMirror(image, "left", "25%", 45);
+                $(".left").append(mirror2);
+                mirror2.changeOpacity(0.75, 0);
+                var mirror3 = new oyoMirror(image, "right", "25%", 90);
+                $(".right").append(mirror3);
+                mirror3.changeOpacity(0.5, 0);
+                var mirror4 = new oyoMirror(image, "bottom", "25%", 90);
+                $(".bottom").append(mirror4);
+                mirror4.changeOpacity(0.5, 0);
+                mirror4.changeFadeColor("tomato");
+            });
+        </script>
+
+        <div class="wrapper">
+            <div class="top"></div>
+            <div class="left"></div>
+            <div class="original">
+                <img class="image" src="folder1.jpg" alt="Radiohead"/>
+            </div>
+            <div class="right"></div>
+            <div class="bottom"></div>
+        </div>
+
+    </body>
+</html>
