@@ -2,7 +2,7 @@
 <a href="http://oyosoftware.nl/plugins/oyomirror/testmirror.html" target="_blank">
   <img src="http://oyosoftware.nl/plugins/oyomirror/oyomirror.jpg" alt="oyotabset">
 </a>
-<p>Tabset Component</p>
+<p>Image Mirror Component</p>
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;currency_code=EUR&amp;business=code@oyosoftware.nl&amp;item_name=donation%20for%20oyomirror" rel="nofollow">
   <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="Donate via PayPal" style="max-width: 100%;vertical-align: top">
 </a>
